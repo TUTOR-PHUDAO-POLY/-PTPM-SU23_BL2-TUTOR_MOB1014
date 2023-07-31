@@ -46,20 +46,20 @@ public class QlLopHoc {
         }
     }
 
-    public void search(ArrayList<LopHoc> list, int min, int max) {
+    public void search(ArrayList<LopHoc> list, String ten) {
         for (LopHoc o : list) {
-            if (min <= o.getDienTich() && max >= o.getDienTich()) {
+            if (o.getTenLop().contains(ten)) {
                 o.inThongTin();
             }
         }
     }
 
     public void fakedata(ArrayList<LopHoc> list) {
-        list.add(new LopHoc("s1", "ssss", 10, "aa"));
-        list.add(new LopHoc("s2", "ssss", 1, "aa"));
-        list.add(new LopHoc("s3", "ssss", 100, "aa"));
-        list.add(new LopHoc("s4", "ssss", 20, "aa"));
-        list.add(new LopHoc("s5", "ssss", 30, "aa"));
+        list.add(new LopHoc("s1", "vinh", 10, "aa"));
+        list.add(new LopHoc("s2", "hoang", 1, "aa"));
+        list.add(new LopHoc("s3", "anh", 100, "aa"));
+        list.add(new LopHoc("s4", "trung", 20, "aa"));
+        list.add(new LopHoc("s5", "thuan", 30, "aa"));
     }
 
     public void delete(ArrayList<LopHoc> list, String ma) {

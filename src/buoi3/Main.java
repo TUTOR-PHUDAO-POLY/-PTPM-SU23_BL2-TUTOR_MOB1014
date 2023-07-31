@@ -36,11 +36,11 @@ public class Main {
                     ql.inTT(list);
                     break;
                 case 3:
-                    System.out.print("moi ban nhap min: ");
-                    int min = Integer.valueOf(sc.nextLine());
+//                    System.out.print("moi ban nhap min: ");
+//                    int min = Integer.valueOf(sc.nextLine());
                     System.out.print("moi ban nhap max: ");
-                    int max = Integer.valueOf(sc.nextLine());
-                    ql.search(list, min, max);
+                    String ten =sc.nextLine();
+                    ql.search(list, ten);
                     break;
 
                 case 4:
